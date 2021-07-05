@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/form.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container">
+            <!-- <a href="#" class="navbar-brand"><img src="./img/logo2.jpg" alt="" class="img-fluid d-block" id="logo"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse " id="navbarSite">
+                <ul class="navbar-nav mr-auto mx-auto">
+
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link"><b>INÍCIO</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./sobre.html" class="nav-link"><b>SOBRE</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./servicos.html" class="nav-link"><b>SERVIÇOS</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./portfolio.html" class="nav-link"><b>PORTIFÓLIO</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link"><b>BLOG</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contato.html" class="nav-link"><b>CONTATOS</b></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="grad1">
+        <div class="row justify-content-center mt-0">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2><strong>Adicione seus dados</strong></h2>
+                    <p>Complete todo formulário para ir para  a próxim etapa</p>
+                    <div class="row">
+                        <div class="col-md-12 mx-0">
+                            <form id="msform">
+                                <!-- progressbar -->
+                                <ul id="progressbar">
+                                    <li class="active" id="account"><strong>Account</strong></li>
+                                    <li id="personal"><strong>Personal</strong></li>
+                                    <li id="payment"><strong>Metragem</strong></li>
+                                    <li id="confirm"><strong>Finish</strong></li>
+                                </ul> <!-- fieldsets -->
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">Account Information</h2>
+                                         <input type="nome" name="nome" placeholder="Nome Completo" /> 
+                                         <input type="text" name="uname" placeholder="email" /> 
+                                         <input type="password" name="tel" placeholder="telefone" />
+                                    </div> <input type="button" name="next" class="next action-button" value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">Informação sobre a residência</h2>
+                                         <input type="text" name="end" placeholder="Endereço" /> 
+                                        <input type="text" name="cidade" placeholder="Cidade" /> 
+                                        <input type="text" name="estado" placeholder="Estado" /> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next action-button" value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">Detalhes sobre o projeto</h2>
+                                        <div class="radio-group">
+                                           
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6"> <input type="text" name="dimensao" placeholder="Dimensões do terreno"></div>
+                                            <div class="col-6">  <input type="text" name="dimensao" placeholder="Quantos m² deseja construir"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6"> <input type="text" name="dimensao" placeholder="Terreno plano ou com aclive/ declive?"></div>
+                                            <div class="col-6">  <input type="text" name="dimensao" placeholder="se sim, qual a porcentagem?"></div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-6"> <input type="text" name="dimensao" placeholder="número de quartos que pretende ter"></div>
+                                            <div class="col-6">  <input type="text" name="dimensao" placeholder="número suites que pretende ter:"></div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-6"> <input type="text" name="dimensao" placeholder="número de banheiros que pretende ter"></div>
+                                            <div class="col-6">  <input type="text" name="dimensao" placeholder="número Lavabos que pretende ter:"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3"> <label class="pay">Expiry Date*</label> </div>
+                                            <div class="col-3"> <select class="list-dt" id="month" name="expmonth">
+                                                    <option selected>Month</option>
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>March</option>
+                                                    <option>April</option>
+                                                    <option>May</option>
+                                                    <option>June</option>
+                                                    <option>July</option>
+                                                    <option>August</option>
+                                                    <option>September</option>
+                                                    <option>October</option>
+                                                    <option>November</option>
+                                                    <option>December</option>
+                                                </select> <select class="list-dt" id="year" name="expyear">
+                                                    <option selected>Year</option>
+                                                </select> </div>
+                                        </div>
+                                    </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="make_payment" class="next action-button" value="Confirm" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title text-center">Success !</h2> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+                                        </div> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 text-center">
+                                                <h5>You Have Successfully Signed Up</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./js/form.js"></script>
+    </footer>
+</body>
+
+</html>
